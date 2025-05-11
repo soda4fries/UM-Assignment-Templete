@@ -1,0 +1,252 @@
+\documentclass[11pt]{article}
+
+% The following packages need to be loaded before fontspec
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Your Research Title Here},
+    pdfpagemode=FullScreen,
+}
+
+% Font configuration
+\usepackage{fontspec}
+\setmainfont{calibri}[
+    Path = ./fonts/,
+    Extension = .ttf,
+    UprightFont = calibri,
+    BoldFont = calibrib,
+    ItalicFont = calibrii,
+    BoldItalicFont = calibriz
+]
+
+\geometry{margin=1in}
+
+\singlespacing
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4\baselineskip}
+
+\makeatletter
+\def\maketitle{
+ \begin{titlepage}
+   \begin{center}
+     \vspace*{.5cm}
+     \includegraphics[width=0.8\textwidth,height=0.3\textheight,keepaspectratio]{UM_LOGO}\\[2cm]
+     {\LARGE\textbf{Your Research Title Here}}\\[.5cm]
+     
+     {\Large Assignment Type}\\[0.5cm]
+     
+     {\large Course Code and Name}\\[0.5cm]
+     
+     {\large Semester X, 20XX/XX}\\[2cm]
+     
+     {\large By}\\[0.5cm]
+     {\large Your Full Name}\\
+     {\large Your Student ID}\\[2cm]
+     
+     {\large Faculty of Computer Science and Information Technology}\\
+     {\large University of Malaya}\\[1cm]
+     
+     {\large \@date}
+   \end{center}
+ \end{titlepage}
+}
+\makeatother
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+
+\begin{abstract}
+This is an example abstract for your University of Malaya assignment or research paper. The abstract should summarize your work in 150-250 words. Include your research problem, methodology, key findings, and conclusions. This paragraph demonstrates how to structure your abstract effectively.
+
+Your abstract should clearly state what you did, how you did it, and what you found. Avoid using citations in your abstract unless absolutely necessary. Focus on communicating the essence of your work in a concise manner that will entice readers to explore your full paper.
+
+This template includes examples of various formatting elements including sections, subsections, equations, tables, figures, and citations throughout the document. You can use these examples as guides for formatting your own content.
+
+\noindent \textbf{Keywords:} Keyword One, Keyword Two, Keyword Three, Keyword Four, Keyword Five
+\end{abstract}
+
+
+
+\section{Introduction}
+
+The introduction should provide context for your research and clearly state your research problem or question \cite{smith2020example}. This section typically begins with background information on your topic, gradually narrowing to your specific focus area. In a well-structured introduction, you should:
+
+\begin{itemize}
+    \item Establish the importance of your topic
+    \item Identify gaps in current knowledge
+    \item State your research objectives or questions
+    \item Outline your approach
+    \item Briefly preview your findings
+\end{itemize}
+
+The introduction should be approximately 10-15\% of your total paper length and should end with a brief overview of how your paper is organized \cite{jones2019research}. This helps the reader understand what to expect in the subsequent sections.
+
+The remainder of this paper is structured as follows: Section \ref{sec:literature} reviews relevant literature and theoretical frameworks. Section \ref{sec:methodology} details our research methodology and data collection procedures. Section \ref{sec:results} presents our findings and analysis. Section \ref{sec:discussion} discusses the implications of our results and their significance. Finally, Section \ref{sec:conclusion} concludes with a summary and directions for future research.
+
+\section{Literature Review}
+\label{sec:literature}
+
+\subsection{Theoretical Framework}
+
+A good literature review synthesizes previous research rather than simply summarizing it. Your literature review should be organized thematically rather than chronologically. Begin with broader theoretical frameworks before narrowing to specific studies relevant to your research question \cite{wilson2021theoretical}.
+
+When discussing previous research, it's important to critically evaluate the methodologies, findings, and limitations of key studies. This critical approach demonstrates your understanding of the field and helps identify gaps that your research addresses \cite{brown2018review}.
+
+\subsection{Current Research Trends}
+
+Recent research in this field has increasingly focused on integrated approaches that combine multiple methodologies \cite{taylor2022integration}. For example, the fundamental equation that describes this relationship can be expressed as:
+
+\begin{equation}
+R_i = C_i + \sum_{j \in hp(i)} \left\lceil\frac{R_i}{T_j}\right\rceil C_j
+\end{equation}
+
+Where $R_i$ represents the response variable, $C_i$ is the coefficient, and $T_j$ represents the time factor \cite{wilson2021theoretical}. This equation forms the foundation for modern approaches in the field.
+
+In distributed systems, the relationship is often extended to:
+
+\begin{equation}
+L = \sum_{i=1}^n (R_i + J_i + C_i)
+\end{equation}
+
+Where $L$ represents the total latency, $R_i$ is the response time of component $i$, $J_i$ is the jitter factor, and $C_i$ is the communication delay \cite{brown2018review}.
+
+\section{Methodology}
+\label{sec:methodology}
+
+\subsection{Research Design}
+
+Your methodology section should clearly describe how you conducted your research. This includes your research design, data collection methods, participant recruitment (if applicable), and analytical procedures \cite{johnson2019methods}.
+
+The complete methodological approach can be represented by:
+
+\begin{equation}
+M = D + I_{\text{factor1}} + I_{\text{factor2}} + I_{\text{factor3}} + I_{\text{factor4}}
+\end{equation}
+
+Where $M$ is the overall methodology, $D$ is the design component, and $I_{\text{factor1}}, I_{\text{factor2}}, I_{\text{factor3}}, I_{\text{factor4}}$ represent different influencing factors in your research approach.
+
+\subsection{Data Collection and Analysis}
+
+For quantitative studies, clearly describe your sampling strategy, variables, measurement instruments, and statistical procedures. For qualitative research, detail your data collection methods, analytical approach, and strategies for ensuring trustworthiness \cite{garcia2020qualitative}.
+
+When collecting data, we followed a three-stage process:
+\begin{enumerate}
+    \item Preliminary assessment and instrument validation
+    \item Primary data collection through [method]
+    \item Secondary data verification and triangulation
+\end{enumerate}
+
+Our analysis employed both descriptive and inferential statistics. For categorical variables, we calculated frequencies and percentages. For continuous variables, we determined means, standard deviations, and confidence intervals.
+
+\section{Results}
+\label{sec:results}
+
+Present your findings objectively, without interpretation (that comes in the discussion section). Use tables, figures, and equations to clearly communicate your results \cite{smith2020example}.
+
+\subsection{Primary Findings}
+
+Our primary findings indicate a significant relationship between variables X and Y ($p < 0.05$). The correlation coefficient was $r = 0.78$, suggesting a strong positive relationship. Table \ref{tab:results} summarizes these findings.
+
+\begin{table}[h!]
+\centering
+\caption{Summary of Research Results}
+\label{tab:results}
+\begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Variable} & \textbf{Measurement Approach} & \textbf{Key Findings} \\
+\hline
+Variable A & Quantitative assessment using validated instrument & Mean score of 4.32 (SD = 0.87); 76\% of participants showed high levels \\
+\hline
+Variable B & Qualitative analysis of interview responses & Three dominant themes emerged: innovation, adaptation, and resilience \\
+\hline
+Variable C & Mixed-methods approach combining surveys and focus groups & Quantitative results supported by qualitative insights; triangulation confirmed validity \\
+\hline
+Variable D & Experimental design with control group comparison & Treatment group showed 37\% improvement compared to 5\% in control group \\
+\hline
+Variable E & Longitudinal assessment with three measurement points & Progressive improvement across time points; statistical significance at T3 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Secondary Analysis}
+
+Our secondary analysis revealed additional patterns in the data. Figure 1 illustrates the relationship between variables Z and W across different demographic groups. This visualization highlights important variations that merit further investigation \cite{jones2019research}.
+
+The mathematical model that best fits our data can be expressed as:
+
+\begin{equation}
+Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \epsilon
+\end{equation}
+
+Where $Y$ is the dependent variable, $X_1$ and $X_2$ are independent variables, $\alpha$ and $\beta$ are coefficients, and $\epsilon$ represents the error term.
+
+\section{Discussion}
+\label{sec:discussion}
+
+In your discussion, interpret your findings in light of your research questions and existing literature \cite{taylor2022integration}. Explain what your results mean and why they matter. Discuss both expected and unexpected findings, and consider alternative explanations for your results.
+
+\subsection{Theoretical Implications}
+
+Our findings support the theoretical framework proposed by Wilson et al. \cite{wilson2021theoretical}, particularly regarding the interaction between variables A and B. However, our results challenge some aspects of the model proposed by Johnson \cite{johnson2019methods}, suggesting that context-specific factors may play a more significant role than previously recognized.
+
+\subsection{Practical Applications}
+
+The practical implications of our research include potential applications in:
+
+\begin{itemize}
+    \item Educational settings, particularly in curriculum development
+    \item Organizational contexts, especially for leadership training
+    \item Policy development at institutional and governmental levels
+    \item Technology design and implementation processes
+\end{itemize}
+
+These applications demonstrate the real-world significance of our findings beyond their theoretical contributions \cite{garcia2020qualitative}.
+
+\subsection{Limitations and Future Research}
+
+Every study has limitations, and discussing them demonstrates scientific integrity. Our study was limited by sample size, geographical constraints, and the cross-sectional nature of our data collection. Future research should address these limitations by:
+
+\begin{enumerate}
+    \item Expanding the sample to include more diverse participants
+    \item Conducting longitudinal studies to track changes over time
+    \item Employing mixed-methods approaches to gain deeper insights
+    \item Exploring additional variables that may influence the relationships we observed
+\end{enumerate}
+
+These suggestions provide direction for advancing knowledge in this important field \cite{brown2018review}.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Your conclusion should summarize your key findings, discuss their broader implications, and suggest directions for future research. Avoid introducing new information in this section \cite{smith2020example}.
+
+This study has examined [your research focus] and found [summary of key findings]. These findings contribute to our understanding of [academic field] by [specific contribution]. The practical implications include [applications of your findings].
+
+Future research should build on these findings by investigating [specific suggestions]. As technology and society continue to evolve, the importance of understanding [your research area] will only increase, making continued scholarly attention to this topic essential.
+
+The methodological approach demonstrated in this study offers a template for researchers seeking to investigate similar phenomena in different contexts. By combining [methodological elements you used], we were able to gain insights that might not have emerged through more traditional approaches.
+
+\clearpage
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}
